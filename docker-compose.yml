@@ -12,7 +12,7 @@ services:
       - ./data/oneapi:/data
       - ./logs:/app/logs
     environment:
-      - SQL_DSN=mysql://one-api:EjiGeaYALTMxPrpT@http://localhost:3306/one-api  # 修改此行，或注释掉以使用 SQLite 作为数据库
+      - SQL_DSN=one-api:N7A5rHELYRs6BWci@tcp(localhost:3306)/one-api  # 修改此行，或注释掉以使用 SQLite 作为数据库
 #      - REDIS_CONN_STRING=redis://redis
       - SESSION_SECRET=sifuture  # 修改为随机字符串
       - TZ=Asia/Shanghai
